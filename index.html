@@ -2,18 +2,21 @@
 <html>
 
 <head>
-    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Meditation, yoga and mindfulness education for beginners and beyond">
     <meta name="keywords" content="meditation, yoga, mindfulness, beginner, how to meditate">
     <title>Peace Master</title>
     <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 </head>
 
 <body>
     <header class="header">
         <nav>
             <a href="index.html"><img src="assets/images/peace-master-logo.png" alt="Peace Master website logo"></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -21,9 +24,39 @@
                     <li><a href="">BLOG</a></li>
                     <li><a href="">CONTACT</a></li>
                 </ul>
-            </div>    
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>    
         </nav>
+
+        <div class="text-box">
+            <h1>World's Best Yoga & Meditation Resource</h1>
+            <p>
+                Your inner peace is waiting for you to come find it. 
+                Trust us how to show you the way within.
+            </p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
+        </div>
     </header>
+
+<!-- Course -->
+
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit?</p>
+    </section>
+
+<!-- JavaScript for togglying the menu  when the page is under 700px wide -->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
 
 </body>
 </html>
