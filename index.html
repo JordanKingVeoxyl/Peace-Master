@@ -18,8 +18,8 @@
     <header class="header">
         <nav>
             <a href="index.html"><img src="assets/images/peace-master-logo.png" alt="Peace Master website logo"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
+            <div class="nav-links">
+                <i class="fa fa-times"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -28,7 +28,7 @@
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>    
+            <i class="fa fa-bars"></i>    
         </nav>
 
         <div class="text-box">
@@ -93,22 +93,6 @@
         </div>
 
     </section>
-
-
-<!-- JavaScript for togglying the menu when the page is under 700px wide -->
-
-    <script>
-        var navLinks = document.getElementById("navLinks");
-
-        function showMenu() {
-            navLinks.style.right = "0";
-        }
-        function hideMenu() {
-            navLinks.style.right = "-200px";
-        }
-    </script>
-
-
 
 <!-- Testimonials -->
 

@@ -55,7 +55,7 @@ nav img {
     transform: scale(1);
     }
     to{
-    transform: scale(1.3);
+    transform: scale(1.2);
     }
 }
 
@@ -138,37 +138,9 @@ nav .fa {
     display: none;
 }
 
-@media (max-width: 700px) {
-    .text-box h1 {
-        font-size: 20px;
-    }
-    .nav-links ul li {
-        display: block;
-    }
-    .nav-links {
-        position: absolute;
-        background: #f44336;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
-        transition: 1s;
-    }
-    nav .fa {
-        display: block;
-        color: #fff;
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
-    }
-    .nav-links ul {
-        padding: 30px;
-    }
-}
 
 /* Campus */ 
+
 
 .campus {
     width: 80%;
@@ -204,7 +176,9 @@ nav .fa {
     background: rgba(0, 15, 226, 0.3);
 }
 
+
 /* Course */
+
 
 .course {
     width: 80%;
@@ -216,6 +190,7 @@ nav .fa {
 h1 {
     font-size: 36px;
     font-weight: 600;
+    text-align: center;
 }
 
 h3 {
@@ -304,23 +279,85 @@ a {
     color: #f44336;
 }
 
+
 /* History section */
 
-#history {
-    height: 800px;
-    width: 100%;
+
+.history {
+    height: 3050px;
     overflow: hidden;
     position: relative;
     font-weight: 1000;
+    background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.9)),url('../images/bookshelf-with-books.webp');
+    background-repeat: repeat-y;
 }
 
-  .history-grid {  display: grid;
+@media (max-width: 400px) {
+    .history {
+    height: 2000px;
+}
+
+    .testimonials {
+        padding-bottom: 150px;
+    }
+
+    .campus {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+}
+
+@media (max-width: 600px) {
+    .history {
+    height: 1000px;
+    }
+}
+
+@media (max-width: 700px) {
+    .history {
+    height: 2000px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .history {
+    height: 8000px;
+    }
+}
+
+@media (max-width: 1800px) {
+    .history {
+    height: 8000px;
+    }
+}
+
+.history h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    background-color: rgba(0, 0, 0, 0.63);
+    border-radius: 40px;
+}
+
+.history h2 {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    padding-top: 10px;
+}
+
+.history p {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+  .history-grid {  
+    display: grid;
     text-align: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
-    gap: 20px 20px;
+    gap: 20px;
     grid-auto-flow: row;
     grid-template-areas:
       ". Tantra ."
@@ -344,23 +381,23 @@ a {
   
   .Tantra { 
     grid-area: Tantra; 
-    background-color: rgba(255, 0, 0, 0.800);
+    background-color: rgb(179, 0, 0);
 }
   
 .Mantra, .Yantra, .Yajna {
-    background-color: rgba(255, 0, 0, 0.500);
+    background-color: rgb(112, 0, 0);
 }
 
 .Bhaktti, .Raja, .Karma {
-    background-color: rgba(255, 255, 0, 00.500)
+    background-color: rgba(255, 255, 0, 1);
 }
 
 .Yama, .Niyamas, .Asana, .Pranayama, .Pratyahara, .Dharana, .Dhyana, .Samadhi, .Buddha, .Buddhism {
-    background-color: rgba(255, 166, 0, .600);
+    background-color: rgb(197, 128, 0);
 }
 
 .Theravada, .Mahayana, .Vajrayana {
-    background-color: rgba(0, 0, 255, 0.568);
+    background-color: rgba(0, 0, 255, 1);
 }
 
   .Mantra { grid-area: Mantra; }
@@ -401,7 +438,7 @@ a {
   
   .Buddhism { 
     grid-area: Buddhism;
-    background-color: rgba(0, 47, 255, 0.8);
+    background-color: rgba(0, 47, 255, 1);
 }
   
   .Theravada { grid-area: Theravada; }
@@ -411,15 +448,17 @@ a {
   .Vajrayana { grid-area: Vajrayana; }
   
   .Zen { grid-area: Zen;
-    background-color: rgba(0, 180, 0, 0.800);
+    background-color: rgba(0, 180, 0, 1);
 }
   
   .Mindfulness { 
     grid-area: Mindfulness; 
-    background-color: rgba(55, 172, 137, 0.842);
+    background-color: rgba(55, 172, 137, 1);
 }
-  
+
+
 /* Meditation techniques page */
+
 
 #techniques-section {
     height: 2050px;
