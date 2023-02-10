@@ -823,7 +823,6 @@ hr {
 }
 
 @media screen and (max-width: 376px) {
-
     nav img {
         width: 120px;
     }
@@ -836,4 +835,7 @@ hr {
         font-size: 20px;
     }
 
+    .nav-links ul li {
+        padding: 4px 8px;
+    }
 }
