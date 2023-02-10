@@ -209,7 +209,7 @@ h3 {
 }
 
 p {
-    color: #777;
+    color: black;
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
@@ -315,16 +315,22 @@ a {
     }
 }
 
+.history h1 {
+    color: white;
+    font-size: 50px;
+}
+
 .history h2 {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     padding-top: 5px;
     padding-bottom: 5px;
     background-color: rgba(0, 0, 0, 0.63);
     border-radius: 40px;
+    color: white;
 }
 
 .history p {
-    color: black;
+    color: white;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
@@ -503,6 +509,7 @@ a {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     background-color: rgba(0, 0, 0, 0.63);
     border-radius: 40px;
+    color: white;
 }
 
 .techniques-grid {
@@ -522,7 +529,7 @@ a {
 }
 
 .techniques-grid h3 {
-    color: rgb(155, 0, 0);
+    color: rgb(211, 0, 0);
 }
 
 .techniques-grid h3:hover {

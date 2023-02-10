@@ -1,108 +1,86 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Project 1: Peace Master Website
 
-Welcome JordanKingVeoxyl,
+## Who is this website for?
+This website is for people who are curious but intimidated by meditation, yoga, mindfulness and its many different definitions/perspectives based on culture and history. Its purpose is to convince people that meditation, yoga and mindfulness is for everybody and not just for a particular group of people that think in an identical way. Users will learn about the differences between meditation practices, their origins and techniques that are simplified so that children are even capable of trying them.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Responsive Test
+![am-i-responsive-test](assets/images/readme-images/am-i-responsive.png)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Features Section
+### Navigation
+![navigation](assets/images/readme-images/1-navigation.png)
+The navigation bar is tucked away into the top left of the screen, being clear and to the point with their intention. The 'Contact Us' navigation link directs you to the bottom of the index.html page but the others direct you to their own unique web pages.
+### Header
+![header section](assets/images/readme-images/2-header.png)
+I liked the idea of having a background image fill the whole homepage. There is a button in the middle of this header section to redirect you to just underneath the picture just in case somebody doesn't instinctivly scroll downward. The text contrasts well with the background image and is accessible. The text shadow around the font helps emphasise this.
 
-## Gitpod Reminders
+### Goals
+![about us section](assets/images/readme-images/3-goals.png)
+Here I wanted to put a brief summary of the purpose of this website. I wanted people to see exactly how meditation practices are split into 3 main categories and that I will be breaking down and explaining to the user exactly what the differences are and how I can clear up confusion about abstract nature of their definitions.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### Courses Section
+![courses section](assets/images/readme-images/4-courses.png)
+I wanted another way for people to click on the 'history' and 'techniques' section of the website. I thought this would give people an incentive to get right into the website rather than potentially losing interest and clicking off. These sections highlight up, so that a user may be made aware that they are clickable and that they will redirect you to where you want to be. 
 
-`python3 -m http.server`
+### Testimonials Section
+![testimonials section](assets/images/readme-images/5-testimonies.png)
+I thought that having a testimonial section at the end of the website would be smart, because if people weren't interested in the contents of the website by the end of the page, they might be given inspiration by existing users' experiences. 
 
-A blue button should appear to click: _Make Public_,
+### Footer Section
+![footer section](assets/images/readme-images/6-footer-social-media.png)
+It was important for me to include social media links at the end of the page. This would incentivise users to connect with the platform and potentially network it to their friends on their own social media pages. I used icons to make them instantly readable and their intention obvious. 
 
-Another blue button should appear to click: _Open Browser_.
+### History Section
+![history section](assets/images/readme-images/7-sign-up.png)
+I included a sign in form so that people could feel like they are a part of the community Peace Master. This would also keep the user engaged. 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Sign-up Page
+![sign-up page](assets/images/readme-images/8-sign-up-page.png)
+This is where the user is redirected to when they click the sign up button. The form is working and collects the users inputs.
 
-A blue button should appear to click: _Make Public_,
+### History Section
+![history section](assets/images/readme-images/9-history-grid.png)
+This section's intention is to show the user the map of meditation, yoga and mindfulness. Most people don't know that mindfulness is a very new meditative technique and I wanted to show them the progress that it took to get there through culture and society. The grid structure of the page allowed me to have relevant categories placed beside each other, and the middle section being the main route of the history map.
 
-Another blue button should appear to click: _Open Browser_.
+### Video Player Section
+![video player section](assets/images/readme-images/10-video-player.png)
+This video explains in detail exactly what meditation is. It is a complete overview of the basics and origins of the practice. I thought having this directly at the top of the techniques section would push the user to watch it first before exploring the content.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Techniques Section 
+![techniques section](assets/images/readme-images/11-techniques.png)
+This is the section of the website that actually trains you to practice meditative techniques through simple to understand directions. I used a grid again so that the page could be an easy reference for on-the-go meditation. 
 
-To log into the Heroku toolbelt CLI:
+## Testing Section
+- Confirmed each link directs to the correct place
+- Tested multiple examples of responsiveness on the website using Chrome Dev Tools
+- Made sure the navigation links were in order of how I would like users to navigate the website as a whole - even when made responsive to different devices. 
+- Used website on different devices 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Bugs Sections
+- There was a bug that I couldn't figure out whatsoever. My 'history section' of the website would refuse to show the full width of the content when on some models of Apple iPhone. I tried many different methods of media query to no avail. I settled for the user having the ability to scroll left and right to see the full contents of the page. I would like to speak with a professional that could show me the error in my logic. 
+- I regrettably didn't notice I had some Chrome extensions turned on while working on the website. For example one of these was 'Dark Mode.' This led to many problems and confusion. It may have led me to change parts of my code, thinking that it was a web page's natural way of responding to HTML and CSS.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## HTML/CSS Validator Test
+w3c html validator - No errors were returned when passing through the official W3C validator 
+w3c css validator - No errors were returned when passing through the official (Jigsaw) validator
 
-------
+## Site Accessibility
+I tested my site's accessibility by inspecting it with Lighthouse and getting a very positive score. This was due to my placement of alt tags for images, making foregrounds seem like they are in front of backgrounds and was very careful with the use of color in text and images. 
+![lighthouse-score](assets/images/readme-images/lighthouse-score.png)
 
-## Release History
+## Deployment Section
+The site was deployed by GitHub Pages. the steps to deploy are as follows:
+- In the Github repository, navigate to the settings tab
+From the source section drop-down menu, select The Master Branch
+- Once the master branch has been selected, the page provided the link to the completed website.
+- The live link can be found here at [Peace Master](https://jordankingveoxyl.github.io/Peace-Master/)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## Credits Section
+### Content
+- The code to make part of the navigation, social media links and decorate CSS was taken from the CI Love Running Project 
+- Sign Up Form taken from w3sschools: https://www.w3schools.com/howto/howto_css_signup_form.asp
+- Inspiration for the header image and its nature to other elements from a Easy Tutorials on YouTube https://www.youtube.com/watch?v=oYRda7UtuhA
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+Media Section
+- All of the images I used were taken from [Pexels](https://www.pexels.com/)
+- Youtube videos used in techniques section: ['What Even is Meditation?' by HealthyGamerGG](https://www.youtube.com/watch?v=dvq48pfJa9w) & [What is yoga? - Sadhguru - Part 1](https://www.youtube.com/watch?v=XLk5yks9c_Q)
