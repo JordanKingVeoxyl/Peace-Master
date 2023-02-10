@@ -13,10 +13,12 @@
 body {
     font-family: lato, sans-serif;
     font-weight: 500px;
-    color: #242323;
+    color: #252525;
+    font-size: 110%;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -28,7 +30,7 @@ h1, h2 {
 .header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.6)),url("../images/woman-at-edge-of-dock-lotus-position.jpg");
+    background-image: linear-gradient(rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.6)), url("../images/woman-at-edge-of-dock-lotus-position.jpg");
     background-position: center;
     background-size: cover;
     position: relative;
@@ -51,11 +53,12 @@ nav img {
 /* Animates our zoom effect of our logo */
 
 @keyframes logo-zoom {
-    from{
-    transform: scale(1);
+    from {
+        transform: scale(1);
     }
-    to{
-    transform: scale(1.2);
+
+    to {
+        transform: scale(1.2);
     }
 }
 
@@ -72,7 +75,7 @@ nav img {
     position: relative;
 }
 
-.nav-links ul li a{
+.nav-links ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 13px;
@@ -100,7 +103,7 @@ nav img {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
@@ -114,7 +117,7 @@ nav img {
     margin: 10px 0 40px;
     font-size: 18px;
     color: rgb(255, 103, 103);
-    
+
 }
 
 .hero-btn {
@@ -139,7 +142,7 @@ nav .fa {
 }
 
 
-/* Campus */ 
+/* Campus */
 
 
 .campus {
@@ -224,7 +227,7 @@ p {
 }
 
 .course-col:hover {
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.9);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.9);
     background: rgba(0, 15, 226, 0.3);
 }
 
@@ -235,7 +238,7 @@ a {
 
 @media(max-width: 700px) {
     .row {
-        flex-direction: column;   
+        flex-direction: column;
     }
 }
 
@@ -284,52 +287,25 @@ a {
 
 
 .history {
-    height: 3050px;
+    height: 3200px;
     overflow: hidden;
     position: relative;
     font-weight: 1000;
-    background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.9)),url('../images/bookshelf-with-books.webp');
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.9)), url('../images/bookshelf-with-books.webp');
     background-repeat: repeat-y;
 }
 
 @media (max-width: 400px) {
-    .history {
-    height: 2000px;
-}
 
     .testimonials {
         padding-bottom: 150px;
     }
 
     .campus {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
-}
-}
-
-@media (max-width: 600px) {
-    .history {
-    height: 1000px;
-    }
-}
-
-@media (max-width: 700px) {
-    .history {
-    height: 2000px;
-    }
-}
-
-@media (max-width: 1200px) {
-    .history {
-    height: 8000px;
-    }
-}
-
-@media (max-width: 1800px) {
-    .history {
-    height: 8000px;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 50px;
     }
 }
 
@@ -347,10 +323,11 @@ a {
 }
 
 .history p {
+    color: black;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-  .history-grid {  
+.history-grid {
     display: grid;
     text-align: center;
     grid-template-columns: 1fr 1fr 1fr;
@@ -360,158 +337,350 @@ a {
     gap: 20px;
     grid-auto-flow: row;
     grid-template-areas:
-      ". Tantra ."
-      "Mantra Yantra Yajna"
-      ". Yoga ."
-      "Bhaktti Raja Karma"
-      ". Yama ."
-      ". Niyamas ."
-      ". Asana ."
-      ". Pranayama ."
-      ". Pratyahara ."
-      ". Dharana ."
-      ". Dhyana ."
-      ". Samadhi ."
-      ". Buddha ."
-      ". Buddhism ."
-      "Theravada Mahayana Vajrayana"
-      ". Zen ."
-      ". Mindfulness .";
-  }
-  
-  .Tantra { 
-    grid-area: Tantra; 
+        ". Tantra ."
+        "Mantra Yantra Yajna"
+        ". Yoga ."
+        "Bhaktti Raja Karma"
+        ". Yama ."
+        ". Niyamas ."
+        ". Asana ."
+        ". Pranayama ."
+        ". Pratyahara ."
+        ". Dharana ."
+        ". Dhyana ."
+        ". Samadhi ."
+        ". Buddha ."
+        ". Buddhism ."
+        "Theravada Mahayana Vajrayana"
+        ". Zen ."
+        ". Mindfulness .";
+}
+
+.Tantra {
+    grid-area: Tantra;
     background-color: rgb(179, 0, 0);
 }
-  
-.Mantra, .Yantra, .Yajna {
+
+.Mantra,
+.Yantra,
+.Yajna {
     background-color: rgb(112, 0, 0);
 }
 
-.Bhaktti, .Raja, .Karma {
+.Bhaktti,
+.Raja,
+.Karma {
     background-color: rgba(255, 255, 0, 1);
 }
 
-.Yama, .Niyamas, .Asana, .Pranayama, .Pratyahara, .Dharana, .Dhyana, .Samadhi, .Buddha, .Buddhism {
+.Yama,
+.Niyamas,
+.Asana,
+.Pranayama,
+.Pratyahara,
+.Dharana,
+.Dhyana,
+.Samadhi,
+.Buddha,
+.Buddhism {
     background-color: rgb(197, 128, 0);
 }
 
-.Theravada, .Mahayana, .Vajrayana {
+.Theravada,
+.Mahayana,
+.Vajrayana {
     background-color: rgba(0, 0, 255, 1);
 }
 
-  .Mantra { grid-area: Mantra; }
-  
-  .Yantra { grid-area: Yantra; }
-  
-  .Yajna { grid-area: Yajna; }
-  
-  .Yoga { 
+.Mantra {
+    grid-area: Mantra;
+}
+
+.Yantra {
+    grid-area: Yantra;
+}
+
+.Yajna {
+    grid-area: Yajna;
+}
+
+.Yoga {
     grid-area: Yoga;
     background-color: yellow;
 }
-  
-  .Raja { grid-area: Raja;
-    background-color: yellow; }
-  
-  .Bhaktti { grid-area: Bhaktti; }
-  
-  .Karma { grid-area: Karma; }
-  
-  .Yama { grid-area: Yama; }
-  
-  .Niyamas { grid-area: Niyamas; }
-  
-  .Asana { grid-area: Asana; }
-  
-  .Pranayama { grid-area: Pranayama; }
-  
-  .Pratyahara { grid-area: Pratyahara; }
-  
-  .Dharana { grid-area: Dharana; }
-  
-  .Dhyana { grid-area: Dhyana; }
-  
-  .Samadhi { grid-area: Samadhi; }
-  
-  .Buddha { grid-area: Buddha; }
-  
-  .Buddhism { 
+
+.Raja {
+    grid-area: Raja;
+    background-color: yellow;
+}
+
+.Bhaktti {
+    grid-area: Bhaktti;
+}
+
+.Karma {
+    grid-area: Karma;
+}
+
+.Yama {
+    grid-area: Yama;
+}
+
+.Niyamas {
+    grid-area: Niyamas;
+}
+
+.Asana {
+    grid-area: Asana;
+}
+
+.Pranayama {
+    grid-area: Pranayama;
+}
+
+.Pratyahara {
+    grid-area: Pratyahara;
+}
+
+.Dharana {
+    grid-area: Dharana;
+}
+
+.Dhyana {
+    grid-area: Dhyana;
+}
+
+.Samadhi {
+    grid-area: Samadhi;
+}
+
+.Buddha {
+    grid-area: Buddha;
+}
+
+.Buddhism {
     grid-area: Buddhism;
     background-color: rgba(0, 47, 255, 1);
 }
-  
-  .Theravada { grid-area: Theravada; }
-  
-  .Mahayana { grid-area: Mahayana; }
-  
-  .Vajrayana { grid-area: Vajrayana; }
-  
-  .Zen { grid-area: Zen;
+
+.Theravada {
+    grid-area: Theravada;
+}
+
+.Mahayana {
+    grid-area: Mahayana;
+}
+
+.Vajrayana {
+    grid-area: Vajrayana;
+}
+
+.Zen {
+    grid-area: Zen;
     background-color: rgba(0, 180, 0, 1);
 }
-  
-  .Mindfulness { 
-    grid-area: Mindfulness; 
-    background-color: rgba(55, 172, 137, 1);
+
+.Mindfulness {
+    grid-area: Mindfulness;
+    background-color: rgb(39, 122, 97);
 }
 
 
 /* Meditation techniques page */
 
 
-#techniques-section {
-    height: 2050px;
+.techniques-section {
+    height: 2200px;
     width: 100%;
     overflow: hidden;
     position: relative;
 }
 
-.techniques-grid {  
+.techniques-section h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    background-color: rgba(0, 0, 0, 0.63);
+    border-radius: 40px;
+}
+
+.techniques-grid {
     display: grid;
     text-align: center;
     grid-template-columns: 1fr 1fr;
-    gap: 10px 10px; 
+    gap: 10px 10px;
     grid-auto-flow: row;
-  }
+}
 
-  .techniques-grid h3 {
-    color:rgb(255, 0, 0);
+.techniques-grid h3 {
+    color: rgb(155, 0, 0);
+}
 
-  }
-
-  .techniques-grid p, .techniques-grid h3 {
+.techniques-grid p,
+.techniques-grid h3 {
     padding: 0.5rem;
-  }
-  
-  .cpr-meditation, .three-part-breathing, .inhale-six-exhale-six, 
-  .body-scan-meditation,  .square-breathing, .four-inhale-eight-exhale, 
-  .walking-meditation, .moving-meditation, .self-inquiry-meditation,
-  .mindfulness-meditation, .guided-meditation, .mantra-meditation,
-  .candle-meditation, .smile-meditation {
-    background-color: rgba(103, 143, 204);
-  }
-  
-  .inhale-six-exhale-six { grid-area: 3 / 1 / 4 / 2; }
-  
-  .body-scan-meditation { grid-area: 3 / 2 / 4 / 3; }
-  
-  .square-breathing { grid-area: 4 / 1 / 5 / 2; }
-  
-  .four-inhale-eight-exhale { grid-area: 4 / 2 / 5 / 3; }
-  
-  .walking-meditation { grid-area: 5 / 1 / 6 / 2; }
-  
-  .moving-meditation { grid-area: 5 / 2 / 6 / 3; }
-  
-  .self-inquiry-meditation { grid-area: 6 / 1 / 7 / 2; }
-  
-  .mindfulness-meditation { grid-area: 6 / 2 / 7 / 3; }
-  
-  .guided-meditation { grid-area: 7 / 1 / 8 / 2; }
-  
-  .mantra-meditation { grid-area: 7 / 2 / 8 / 3; }
-  
-  .candle-meditation { grid-area: 8 / 1 / 9 / 2; }
-  
-  .smile-meditation { grid-area: 8 / 2 / 9 / 3; }
+}
+
+.cpr-meditation,
+.three-part-breathing,
+.inhale-six-exhale-six,
+.body-scan-meditation,
+.square-breathing,
+.four-inhale-eight-exhale,
+.walking-meditation,
+.moving-meditation,
+.self-inquiry-meditation,
+.mindfulness-meditation,
+.guided-meditation,
+.mantra-meditation,
+.candle-meditation,
+.smile-meditation {
+    background-color: rgb(124, 176, 255);
+}
+
+.inhale-six-exhale-six {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.body-scan-meditation {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.square-breathing {
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+.four-inhale-eight-exhale {
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.walking-meditation {
+    grid-area: 5 / 1 / 6 / 2;
+}
+
+.moving-meditation {
+    grid-area: 5 / 2 / 6 / 3;
+}
+
+.self-inquiry-meditation {
+    grid-area: 6 / 1 / 7 / 2;
+}
+
+.mindfulness-meditation {
+    grid-area: 6 / 2 / 7 / 3;
+}
+
+.guided-meditation {
+    grid-area: 7 / 1 / 8 / 2;
+}
+
+.mantra-meditation {
+    grid-area: 7 / 2 / 8 / 3;
+}
+
+.candle-meditation {
+    grid-area: 8 / 1 / 9 / 2;
+}
+
+.smile-meditation {
+    grid-area: 8 / 2 / 9 / 3;
+}
+
+/* Footer */
+
+footer {
+    height: 150px;
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks>li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: #3a3a3a;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1500px) {
+    .history {
+        height: 3600px;
+    }
+}
+
+@media screen and (max-width: 1245px) {
+    .history {
+        height: 4000px;
+    }
+}
+
+/* For medium screen sizes from 950px wide and down */
+@media screen and (max-width: 950px) {
+
+    .menu {
+        clear: left;
+        float: left;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+
+    .techniques-section {
+        height: 2400px;
+    }
+
+    .history {
+        height: 4600px;
+    }
+}
+
+/* For small screen sizes below 800px width */
+@media screen and (max-width: 800px) {
+
+    .nav {
+        clear: left;
+        float: left;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+
+    .techniques-section {
+        height: 2600px;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .history {
+        height: 5500px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .history {
+        height: 6800px;
+    }
+
+    .techniques-section {
+        height: 2900px;
+    }
+
+    #footer {
+        height: 300px;
+    }
+}
