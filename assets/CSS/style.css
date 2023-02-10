@@ -10,9 +10,11 @@
     border: 0;
 }
 
+/* Important Elements */
+
 body {
     font-family: lato, sans-serif;
-    font-weight: 500px;
+    font-weight: 500;
     color: #252525;
     font-size: 110%;
 }
@@ -21,9 +23,13 @@ h1,
 h2 {
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     color: #252525;
 }
+
+hr {
+    border-color: blue;
+ }
 
 /* Header, logo and Navigation */
 
@@ -190,7 +196,7 @@ nav .fa {
     padding-top: 30px;
 }
 
-h1 {
+h1, h2 {
     font-size: 36px;
     font-weight: 600;
     text-align: center;
@@ -287,7 +293,7 @@ a {
 
 
 .history {
-    height: 3200px;
+    height: 3400px;
     overflow: hidden;
     position: relative;
     font-weight: 1000;
@@ -309,17 +315,12 @@ a {
     }
 }
 
-.history h1 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    background-color: rgba(0, 0, 0, 0.63);
-    border-radius: 40px;
-}
-
 .history h2 {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    padding-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgba(0, 0, 0, 0.63);
+    border-radius: 40px;
 }
 
 .history p {
@@ -490,7 +491,7 @@ a {
 
 
 .techniques-section {
-    height: 2200px;
+    height: 2900px;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -767,11 +768,11 @@ hr {
     }
 
     .techniques-section {
-        height: 2400px;
+        height: 3000px;
     }
 
     .history {
-        height: 4600px;
+        height: 5000px;
     }
 }
 
@@ -787,14 +788,14 @@ hr {
     }
 
     .techniques-section {
-        height: 2600px;
+        height: 3000px;
         width: 100%;
         overflow: hidden;
         position: relative;
     }
 
     .history {
-        height: 5500px;
+        height: 6000px;
     }
 }
 
@@ -803,7 +804,7 @@ hr {
 
     
     .history {
-        height: 6800px;
+        height: 7400px;
         overflow: visible;
         width: fit-content;
         width: 100vh;
