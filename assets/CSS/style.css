@@ -821,3 +821,19 @@ hr {
         height: 300px;
     }
 }
+
+@media screen and (max-width: 376px) {
+
+    nav img {
+        width: 120px;
+    }
+
+    .text-box {
+        width: 92%;
+    }
+    
+    .text-box h1 {
+        font-size: 20px;
+    }
+
+}
