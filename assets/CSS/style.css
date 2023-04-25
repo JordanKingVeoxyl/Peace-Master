@@ -40,6 +40,7 @@ hr {
     background-position: center;
     background-size: cover;
     position: relative;
+    
 }
 
 nav {
@@ -101,6 +102,7 @@ nav img {
     width: 100%;
 }
 
+
 /* Text-Box Containing Brand/Website Information */
 
 .text-box {
@@ -123,7 +125,6 @@ nav img {
     margin: 10px 0 40px;
     font-size: 18px;
     color: rgb(255, 103, 103);
-
 }
 
 .hero-btn {
@@ -293,26 +294,9 @@ a {
 
 
 .history {
-    height: 3400px;
-    overflow: hidden;
+    height: fit-content;
     position: relative;
     font-weight: 1000;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.9)), url('../images/bookshelf-with-books.webp');
-    background-repeat: repeat-y;
-}
-
-@media (max-width: 400px) {
-
-    .testimonials {
-        padding-bottom: 150px;
-    }
-
-    .about {
-        width: 80%;
-        margin: auto;
-        text-align: center;
-        padding-top: 50px;
-    }
 }
 
 .history h1 {
@@ -497,9 +481,8 @@ a {
 
 
 .techniques-section {
-    height: 2900px;
+    height: fit-content;
     width: 100%;
-    overflow: hidden;
     position: relative;
 }
 
@@ -515,15 +498,16 @@ a {
 .techniques-grid {
     display: grid;
     text-align: center;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 10px 10px;
     grid-auto-flow: row;
+    height: fit-content;
 }
 
 .techniques-grid:hover {
     display: grid;
     text-align: center;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 10px 10px;
     grid-auto-flow: row;
 }
@@ -561,58 +545,12 @@ a {
     background-color: rgb(124, 176, 255);
 }
 
-.inhale-six-exhale-six {
-    grid-area: 3 / 1 / 4 / 2;
-}
-
-.body-scan-meditation {
-    grid-area: 3 / 2 / 4 / 3;
-}
-
-.square-breathing {
-    grid-area: 4 / 1 / 5 / 2;
-}
-
-.four-inhale-eight-exhale {
-    grid-area: 4 / 2 / 5 / 3;
-}
-
-.walking-meditation {
-    grid-area: 5 / 1 / 6 / 2;
-}
-
-.moving-meditation {
-    grid-area: 5 / 2 / 6 / 3;
-}
-
-.self-inquiry-meditation {
-    grid-area: 6 / 1 / 7 / 2;
-}
-
-.mindfulness-meditation {
-    grid-area: 6 / 2 / 7 / 3;
-}
-
-.guided-meditation {
-    grid-area: 7 / 1 / 8 / 2;
-}
-
-.mantra-meditation {
-    grid-area: 7 / 2 / 8 / 3;
-}
-
-.candle-meditation {
-    grid-area: 8 / 1 / 9 / 2;
-}
-
-.smile-meditation {
-    grid-area: 8 / 2 / 9 / 3;
-}
 
 /* Footer */
 
 footer {
-    height: 150px;
+    height: 100px;
+    background-color: white;
 }
 
 .social-networks {
@@ -713,7 +651,6 @@ button:hover {
 
 /* Style the horizontal ruler */
 hr {
-  border: 1px solid #f1f1f1;
   margin-bottom: 25px;
 }
 
@@ -751,16 +688,12 @@ hr {
 
 /* For bigger screen sizes below 1500px width */
 @media screen and (max-width: 1500px) {
-    .history {
-        height: 3600px;
-    }
+
 }
 
 /* For big screen sizes below 1245px width */
 @media screen and (max-width: 1245px) {
-    .history {
-        height: 4000px;
-    }
+    
 }
 
 /* For medium screen sizes from 950px wide and down */
@@ -773,13 +706,32 @@ hr {
         margin-bottom: 20px;
         line-height: 25px;
     }
-
-    .techniques-section {
-        height: 3000px;
-    }
-
-    .history {
-        height: 5000px;
+    .history-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            ". Tantra ."
+            ". Mantra ." 
+            ". Yantra ."
+            ". Yajna ."
+            ". Yoga ."
+            ". Bhaktti ." 
+            ". Raja ." 
+            ". Karma ."
+            ". Yama ."
+            ". Niyamas ."
+            ". Asana ."
+            ". Pranayama ."
+            ". Pratyahara ."
+            ". Dharana ."
+            ". Dhyana ."
+            ". Samadhi ."
+            ". Buddha ."
+            ". Buddhism ."
+            ". Theravada ." 
+            ". Mahayana ."
+            ". Vajrayana ."
+            ". Zen ."
+            ". Mindfulness .";
     }
 }
 
@@ -795,14 +747,24 @@ hr {
     }
 
     .techniques-section {
-        height: 3000px;
+        height: fit-content;
         width: 100%;
-        overflow: hidden;
         position: relative;
     }
 
     .history {
-        height: 6000px;
+        height: 4000px;
+    }
+    nav img {
+        width: 120px;
+    }
+
+    .text-box {
+        width: 92%;
+    }
+    
+    .text-box h1 {
+        font-size: 20px;
     }
 }
 
@@ -811,10 +773,7 @@ hr {
 
     
     .history {
-        height: 7400px;
-        overflow: visible;
-        width: fit-content;
-        width: 100vh;
+        height: fit-content;
     }
 
     .header {
@@ -828,22 +787,20 @@ hr {
     .footer {
         height: 300px;
     }
-}
-
-@media screen and (max-width: 376px) {
-    nav img {
-        width: 120px;
+    .testimonials {
+        padding-bottom: 150px;
     }
 
-    .text-box {
-        width: 92%;
-    }
-    
-    .text-box h1 {
-        font-size: 20px;
+    .about {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 50px;
     }
 
     .nav-links ul li {
         padding: 4px 8px;
     }
 }
+
+
