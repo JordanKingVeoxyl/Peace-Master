@@ -476,13 +476,14 @@ a {
 .techniques-section {
     height: fit-content;
     width: 100%;
+    background-color: #ACBED8;
 }
 
 .techniques-grid {
     display: grid;
     text-align: center;
     grid-template-columns: 1fr;
-    gap: 10px 10px;
+    gap: 10px;
     grid-auto-flow: row;
     height: fit-content;
 }
@@ -530,6 +531,7 @@ a {
 
 footer {
     height: 150px;
+    width: 100%;
     background-color: white;
 }
 
@@ -715,12 +717,6 @@ hr {
         margin-bottom: 20px;
         line-height: 25px;
     }
-
-    .techniques-section {
-        height: fit-content;
-        width: 100%;
-        position: relative;
-    }
     nav img {
         width: 120px;
     }
@@ -736,11 +732,6 @@ hr {
 
 /* For smaller screen sizes below 415px width */
 @media screen and (max-width: 415px) {
-
-
-    .techniques-section {
-        height: 2900px;
-    }
     .testimonials {
         padding-bottom: 150px;
     }
