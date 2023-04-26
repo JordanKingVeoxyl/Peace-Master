@@ -77,7 +77,6 @@ nav img {
 .nav-links {
     flex: 1;
     text-align: right;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .nav-links ul li {
@@ -88,16 +87,17 @@ nav img {
 }
 
 .nav-links ul li a {
-    color: #fff;
+    color: #1C2826;
     text-decoration: none;
     font-size: 13px;
+    font-weight: 1000;
 }
 
 .nav-links ul li::after {
     content: '';
     width: 0%;
     height: 2px;
-    background: #f44336;
+    background: #DE1A1A;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -106,7 +106,6 @@ nav img {
 .nav-links ul li:hover::after {
     width: 100%;
 }
-
 
 /* Text-Box Containing Brand/Website Information */
 
@@ -164,6 +163,10 @@ nav .fa {
     padding-top: 50px;
 }
 
+.about h2 {
+    background-color: #4464AD;
+}
+
 .about-col {
     flex-basis: 32%;
     border-radius: 10px;
@@ -202,6 +205,10 @@ nav .fa {
     padding-top: 30px;
 }
 
+.course h2 {
+    background-color: #4464AD;
+}
+
 h1, h2 {
     font-size: 36px;
     font-weight: 600;
@@ -220,12 +227,6 @@ p {
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
-}
-
-.row {
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-between;
 }
 
 .course-col {
@@ -252,19 +253,21 @@ a {
 
 .testimonials {
     width: 80%;
-    margin: auto;
     padding-top: 50px;
     text-align: center;
+    margin: 0 auto;
+}
+
+.testimonials h2 {
+    background-color: #4464AD;
 }
 
 .testimonial-col {
-    flex-basis: 42%;
     border-radius: 10px;
     margin-bottom: 5%;
-    text-align: left;
+    text-align: center;
     background: #DE1A1A;
     padding: 20px;
-    cursor: pointer;
     display: flex;
 }
 
@@ -285,9 +288,8 @@ a {
 }
 
 .testimonial-col .fa {
-    color: #f44336;
+    color: #4464AD;
 }
-
 
 /* History section */
 
@@ -303,9 +305,10 @@ a {
     padding-top: 20px;
     padding-bottom: 20px;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    background-color: rgba(0, 0, 0, 0.63);
+    background-color: #DE1A1A;
     border-radius: 40px;
     color: white;
+    margin: 10px 10px; 
 }
 
 .history h2 {
@@ -480,7 +483,7 @@ a {
     padding-top: 20px;
     padding-bottom: 20px;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    background-color: rgba(0, 0, 0, 0.63);
+    background-color: #DE1A1A;
     border-radius: 40px;
     color: white;
 }
@@ -494,23 +497,12 @@ a {
     height: fit-content;
 }
 
-.techniques-grid:hover {
-    display: grid;
-    text-align: center;
-    grid-template-columns: 1fr;
-    gap: 10px 10px;
-    grid-auto-flow: row;
-}
-
 .techniques-grid h3 {
-    color: rgb(211, 0, 0);
-}
-
-.techniques-grid h3:hover {
-    color: rgb(189, 132, 0);
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    background: rgba(0, 12, 185, 0.464);
-    padding: 0.5rem;
+    color: white;
+    background-color: #4464AD;
+    border-radius: 40px;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .techniques-grid p,
@@ -532,9 +524,8 @@ a {
 .mantra-meditation,
 .candle-meditation,
 .smile-meditation {
-    background-color: rgb(124, 176, 255);
+    background-color: #DE1A1A;
 }
-
 
 /* Footer */
 
