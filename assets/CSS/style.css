@@ -33,14 +33,19 @@ hr {
 
 /* Header, logo and Navigation */
 
-.header {
-    min-height: 100vh;
+.header-index {
+    height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.6)), url("../images/woman-at-edge-of-dock-lotus-position.jpg");
     background-position: center;
     background-size: cover;
-    position: relative;
-    
+    position: relative; 
+}
+
+.header {
+    height: 100vh;
+    width: 100%;
+    position: relative; 
 }
 
 nav {
@@ -118,13 +123,13 @@ nav img {
 
 .text-box h1 {
     font-size: 50px;
-    color: rgb(136, 136, 255);
+    color: #DE1A1A;
 }
 
 .text-box p {
     margin: 10px 0 40px;
     font-size: 18px;
-    color: rgb(255, 103, 103);
+    color: #acbed8;
 }
 
 .hero-btn {
@@ -211,7 +216,7 @@ h3 {
 
 p {
     color: black;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
@@ -225,7 +230,7 @@ p {
 
 .course-col {
     flex-basis: 45%;
-    background: #ff7b7b;
+    background: #DE1A1A;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
@@ -243,12 +248,6 @@ a {
     color: inherit;
 }
 
-@media(max-width: 700px) {
-    .row {
-        flex-direction: column;
-    }
-}
-
 /* Testimonials */
 
 .testimonials {
@@ -263,7 +262,7 @@ a {
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
-    background: #ff7b7b;
+    background: #DE1A1A;
     padding: 20px;
     cursor: pointer;
     display: flex;
@@ -297,18 +296,23 @@ a {
     height: fit-content;
     position: relative;
     font-weight: 1000;
+    background-color: #ACBED8;
 }
 
 .history h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    background-color: rgba(0, 0, 0, 0.63);
+    border-radius: 40px;
     color: white;
-    font-size: 50px;
 }
 
 .history h2 {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: rgba(0, 0, 0, 0.63);
+    background-color: #4464AD;
     border-radius: 40px;
     color: white;
 }
@@ -347,40 +351,31 @@ a {
         ". Mindfulness .";
 }
 
-.Tantra {
-    grid-area: Tantra;
-    background-color: rgb(179, 0, 0);
-}
-
+.Tantra,
 .Mantra,
 .Yantra,
-.Yajna {
-    background-color: rgb(112, 0, 0);
-}
-
+.Yajna,
 .Bhaktti,
 .Raja,
-.Karma {
-    background-color: rgba(255, 255, 0, 1);
-}
-
+.Karma,
 .Yama,
 .Niyamas,
 .Asana,
+.Yoga,
 .Pranayama,
 .Pratyahara,
 .Dharana,
 .Dhyana,
 .Samadhi,
 .Buddha,
-.Buddhism {
-    background-color: rgb(197, 128, 0);
-}
-
+.Buddhism,
 .Theravada,
 .Mahayana,
-.Vajrayana {
-    background-color: rgba(0, 0, 255, 1);
+.Vajrayana,
+.Zen,
+.Mindfulness {
+    grid-area: Tantra;
+    background-color: #de1a1a;
 }
 
 .Mantra {
@@ -397,12 +392,10 @@ a {
 
 .Yoga {
     grid-area: Yoga;
-    background-color: yellow;
 }
 
 .Raja {
     grid-area: Raja;
-    background-color: yellow;
 }
 
 .Bhaktti {
@@ -451,7 +444,6 @@ a {
 
 .Buddhism {
     grid-area: Buddhism;
-    background-color: rgba(0, 47, 255, 1);
 }
 
 .Theravada {
@@ -468,12 +460,10 @@ a {
 
 .Zen {
     grid-area: Zen;
-    background-color: rgba(0, 180, 0, 1);
 }
 
 .Mindfulness {
     grid-area: Mindfulness;
-    background-color: rgb(39, 122, 97);
 }
 
 
@@ -549,7 +539,7 @@ a {
 /* Footer */
 
 footer {
-    height: 100px;
+    height: 150px;
     background-color: white;
 }
 
@@ -698,14 +688,6 @@ hr {
 
 /* For medium screen sizes from 950px wide and down */
 @media screen and (max-width: 950px) {
-
-    .menu {
-        clear: left;
-        float: left;
-        margin-left: 30px;
-        margin-bottom: 20px;
-        line-height: 25px;
-    }
     .history-grid {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -751,10 +733,6 @@ hr {
         width: 100%;
         position: relative;
     }
-
-    .history {
-        height: 4000px;
-    }
     nav img {
         width: 120px;
     }
@@ -771,21 +749,9 @@ hr {
 /* For smaller screen sizes below 415px width */
 @media screen and (max-width: 415px) {
 
-    
-    .history {
-        height: fit-content;
-    }
-
-    .header {
-        width: fit-content;
-    }
 
     .techniques-section {
         height: 2900px;
-    }
-
-    .footer {
-        height: 300px;
     }
     .testimonials {
         padding-bottom: 150px;
