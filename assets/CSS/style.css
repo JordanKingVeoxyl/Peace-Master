@@ -476,16 +476,6 @@ a {
 .techniques-section {
     height: fit-content;
     width: 100%;
-    position: relative;
-}
-
-.techniques-section h1 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    background-color: #DE1A1A;
-    border-radius: 40px;
-    color: white;
 }
 
 .techniques-grid {
@@ -495,6 +485,15 @@ a {
     gap: 10px 10px;
     grid-auto-flow: row;
     height: fit-content;
+}
+
+.techniques-section h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    background-color: #DE1A1A;
+    border-radius: 40px;
+    color: white;
 }
 
 .techniques-grid h3 {
@@ -550,11 +549,9 @@ footer {
 }
 
 iframe {
-    display: block;
-    margin: auto;
-    padding-bottom: 30px;
-    padding-top: 20px;
-}
+    width: 100vw;
+    height: calc(100vw/1.77);
+   }
 
 /* Sign Up Form */
 
