@@ -152,15 +152,15 @@ nav .fa {
     display: none;
 }
 
-
 /* about */
 
 
 .about {
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
     padding-top: 50px;
+    background-color: #ACBED8
 }
 
 .about h2 {
@@ -179,6 +179,7 @@ nav .fa {
     width: 100%;
     display: block;
     height: 70%;
+    margin: 0 auto;
 }
 
 .layer {
@@ -191,7 +192,7 @@ nav .fa {
 }
 
 .layer:hover {
-    background: rgba(0, 15, 226, 0.3);
+    background: #4463ad67;
 }
 
 
@@ -203,6 +204,7 @@ nav .fa {
     margin: auto;
     text-align: center;
     padding-top: 30px;
+    background-color: #ACBED8
 }
 
 .course h2 {
@@ -241,7 +243,7 @@ p {
 
 .course-col:hover {
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.9);
-    background: rgba(0, 15, 226, 0.3);
+    background: #4464AD;
 }
 
 a {
@@ -254,8 +256,10 @@ a {
 .testimonials {
     width: 80%;
     padding-top: 50px;
+    padding-bottom: 10px;
     text-align: center;
     margin: 0 auto;
+    background-color: #ACBED8
 }
 
 .testimonials h2 {
@@ -289,6 +293,12 @@ a {
 
 .testimonial-col .fa {
     color: #4464AD;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* History section */
@@ -557,7 +567,9 @@ iframe {
 
 /* Sign Up Form */
 
-* {box-sizing: border-box}
+* {
+    box-sizing: border-box;
+    }
 /* Full-width input fields */
   input[type=text], input[type=password] {
   width: 100%;
@@ -657,13 +669,6 @@ hr {
   display: table;
 }
 
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn {
-    width: 100%;
-  }
-}
-
 /* Media queries */
 
 /* For bigger screen sizes below 1500px width */
@@ -728,13 +733,13 @@ hr {
     .text-box h1 {
         font-size: 20px;
     }
+    .row {
+        display: block;
+    }
 }
 
 /* For smaller screen sizes below 415px width */
 @media screen and (max-width: 415px) {
-    .testimonials {
-        padding-bottom: 150px;
-    }
 
     .about {
         width: 80%;
@@ -747,5 +752,12 @@ hr {
         padding: 4px 8px;
     }
 }
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+      width: 100%;
+    }
+  }
 
 
