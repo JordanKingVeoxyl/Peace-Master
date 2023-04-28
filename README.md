@@ -4,7 +4,7 @@
 This website is for people who are curious but intimidated by meditation, yoga, mindfulness and its many different definitions/perspectives based on culture and history. Its purpose is to convince people that meditation, yoga and mindfulness is for everybody and not just for a particular group of people that think in an identical way. Users will learn about the differences between meditation practices, their origins and techniques that are simplified so that children are even capable of trying them.
 
 ## Responsive Test
-![am-i-responsive-test](assets/images/readme-images/am-i-responsive.png)
+![am-i-responsive-test](assets/images/peace-master-final/amiresponsive.png)
 
 ## Features Section
 ### Navigation
@@ -56,10 +56,11 @@ This is the section of the website that actually trains you to practice meditati
 - Made sure the navigation links were in order of how I would like users to navigate the website as a whole - even when made responsive to different devices. 
 - Used website on different devices 
 
-## Bugs Sections
+## Solved Bugs Sections
 - There was a bug in my 'history section' of the website that would refuse to show the full width of the content when on some models of Apple iPhone. I tried many different methods of media query and eventually came to the conclusion that each grid would be put one under the other instead of a row of 3 grid sections.
 - The color contrast of my page was poor. I used a website called 'coolors' that allowed me to find a color palette that meshed together well and was more accessible.
 - There was a bug in my techniques page that forced me to change the height of the page in too many different types of widths. I eventually found that the variable height: fit-content; vairable worked very well and I went back and used this on numerous different places of my website.
+- The video iframe on the techniques page failed to scale with the responsiveness of the site. I had to apply a manual mathmatical scaling formula in my CSS to make it work and be fully displayed to scale no matter what the page size was without sacrificing the rest of the elements on the page.
 
 ## HTML/CSS Validator Test
 w3c html validator - No errors were returned when passing through the official W3C validator 
@@ -69,7 +70,7 @@ w3c css validator - No errors were returned when passing through the official (J
 
 ## Site Accessibility
 I tested my site's accessibility by inspecting it with Lighthouse and getting a very positive score. This was due to my placement of alt tags for images, making foregrounds seem like they are in front of backgrounds and was very careful with the use of color in text and images. 
-![lighthouse-score](assets/images/readme-images/lighthouse-score.png)
+![lighthouse-score](assets/images/peace-master-final/performance.png)
 
 ## Deployment Section
 The site was deployed by GitHub Pages. the steps to deploy are as follows:
