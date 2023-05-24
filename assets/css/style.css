@@ -44,7 +44,6 @@ hr {
 }
 
 .header {
-    height: 100vh;
     width: 100%;
     position: relative; 
 }
@@ -559,10 +558,6 @@ footer {
     margin: 1%;
     padding: 5%;
     color: #3a3a3a;
-}
-
-.techniques header {
-    height: auto;
 }
 
 iframe {
