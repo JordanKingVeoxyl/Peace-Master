@@ -562,7 +562,7 @@ footer {
 }
 
 .techniques header {
-    height: 0;
+    height: auto;
 }
 
 iframe {
@@ -570,7 +570,6 @@ iframe {
     height: calc(100vw/1.77);
     margin: 0;
     padding: 0;
-
    }
 
 /* Sign Up Form */
